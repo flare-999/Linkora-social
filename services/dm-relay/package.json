@@ -5,9 +5,9 @@
   "description": "End-to-end encrypted direct message relay for Linkora",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "ts-node src/index.ts",
-    "build": "tsc",
-    "start": "node dist/index.js",
+    "dev": "node init && ts-node src/index.ts",
+    "build": "node init && tsc",
+    "start": "node init && node dist/index.js",
     "test": "jest",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write \"src/**/*.ts\""
@@ -25,5 +25,7 @@
     "ts-jest": "^29.1.0",
     "typescript": "^5.8.3"
   },
-  "engines": { "node": ">=18" }
+  "engines": {
+    "node": ">=18"
+  }
 }
