@@ -2,9 +2,9 @@
   "name": "linkora-socials",
   "private": true,
   "scripts": {
-    "dev": "turbo run dev",
+    "dev": "node api.js && turbo run dev",
     "dev:contracts": "pnpm --filter contracts dev",
-    "build": "turbo run build",
+    "build": "node api.js && turbo run build",
     "build:contracts": "pnpm --filter contracts build",
     "lint": "turbo run lint",
     "test": "turbo run test",
